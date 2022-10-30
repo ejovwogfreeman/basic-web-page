@@ -1,0 +1,129 @@
+header {
+  position: relative;
+  padding: 50px 0px;
+  width: 1152;
+  margin: auto;
+}
+
+header .share {
+  position: absolute;
+  right: 0px;
+  top: 30px;
+}
+
+.img-container {
+  border: 1px solid black;
+  height: 100px;
+  width: 100px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: auto;
+}
+
+#profile__img {
+  width: 50px;
+}
+
+.links-container {
+  padding-bottom: 20px;
+}
+
+.links-container a {
+  color: #101828;
+  font-weight: 500;
+  font-size: 18px;
+  display: block;
+  text-decoration: none;
+  background-color: #eaecf0;
+  width: 1152px;
+  height: 76px;
+  background: #eaecf0;
+  border: 1px solid #eaecf0;
+  border-radius: 8px;
+  margin: 20px auto;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  transition: 0.5s ease-in-out;
+}
+
+.links-container a:hover {
+  background-color: #d6d7da;
+}
+
+footer {
+  padding: 100px 0px 50px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 1152px;
+  margin: auto;
+  transition: 0.5s ease-in-out;
+}
+
+@media screen and (max-width: 1200px) {
+  .links-container a,
+  header,
+  footer {
+    width: 900px;
+  }
+}
+
+@media screen and (max-width: 1000px) {
+  .links-container a,
+  header,
+  footer {
+    width: 700px;
+  }
+}
+
+@media screen and (max-width: 800px) {
+  .links-container a,
+  header,
+  footer {
+    width: 500px;
+  }
+  header {
+    padding: 50px 0px 10px;
+  }
+  footer {
+    display: block;
+    text-align: left;
+    padding-top: 80px;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .links-container a,
+  header,
+  footer {
+    width: 380px;
+  }
+}
+
+@media screen and (max-width: 400px) {
+  .links-container a,
+  header,
+  footer {
+    width: 350px;
+  }
+}
+
+@media screen and (max-width: 360px) {
+  .links-container a,
+  header,
+  footer {
+    width: 300px;
+  }
+}
+
+@media screen and (max-width: 310px) {
+  .links-container a,
+  header,
+  footer {
+    width: 280px;
+  }
+}
