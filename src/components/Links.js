@@ -41,17 +41,17 @@ const Links = () => {
     <section>
       <div className="links-container">
         {data.map((urls, index) => (
-          <a href={urls.url} id={urls.id} key={index} target="_blank">
+          <a href={urls.url} id={urls.id} key={index}>
             {urls.text}
           </a>
         ))}
       </div>
       <div>
-        <a href="#" alt="slack">
+        <a href="htts://www.slack.com/" alt="slack">
           <img src={slack} alt="slack" />
         </a>
         &nbsp; &nbsp; &nbsp;
-        <a href="#" alt="slack">
+        <a href="htts://github.com/ejovwogfreeman" alt="slack">
           <img src={github} alt="github" />
         </a>
       </div>
