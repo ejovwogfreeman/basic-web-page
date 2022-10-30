@@ -1,4 +1,5 @@
 import React from "react";
+import "../css/general.css";
 import i4g from "../images/i4g-logo.png";
 import zuri from "../images/zuri-logo.png";
 

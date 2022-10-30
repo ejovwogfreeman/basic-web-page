@@ -1,4 +1,5 @@
 import React from "react";
+import "../css/general.css";
 import img from "../images/gbprofile.png";
 import share from "../images/share-button.png";
 
