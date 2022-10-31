@@ -6,7 +6,7 @@ import share from "../images/share-button.png";
 const Header = () => {
   return (
     <header>
-      <a href="htts://www.twitter.com/ejovwogfreeman">
+      <a href="htts://www.twitter.com/ejovwogfreeman/">
         <img src={share} alt="share" className="share" />
       </a>
       <div className="img-container">

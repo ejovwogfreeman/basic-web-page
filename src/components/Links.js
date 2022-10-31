@@ -5,7 +5,7 @@ import github from "../images/github-icon.png";
 
 const data = [
   {
-    url: "https://twitter.com/ejovwogfreeman",
+    url: "https://twitter.com/ejovwogfreeman/",
     text: "Twitter",
     id: "twitter",
   },
@@ -20,17 +20,17 @@ const data = [
     id: "books",
   },
   {
-    url: "https://books.zuri.team/python-for-beginners?ref_id=ejovwo-godbless",
+    url: "https://books.zuri.team/python-for-beginners?ref_id=ejovwo-godbless/",
     text: "Python Books",
     id: "book__python",
   },
   {
-    url: "https://background.zuri.team",
+    url: "https://background.zuri.team/",
     text: "Background Check for Coders",
     id: "pitch",
   },
   {
-    url: "https://books.zuri.team/design-rules",
+    url: "https://books.zuri.team/design-rules/",
     text: "Design Books",
     id: "book__design",
   },
@@ -51,7 +51,7 @@ const Links = () => {
           <img src={slack} alt="slack" />
         </a>
         &nbsp; &nbsp; &nbsp;
-        <a href="htts://github.com/ejovwogfreeman" alt="slack">
+        <a href="htts://github.com/ejovwogfreeman/" alt="slack">
           <img src={github} alt="github" />
         </a>
       </div>
