@@ -20,6 +20,25 @@ header .share {
   align-items: center;
   justify-content: center;
   margin: auto;
+  position: relative;
+}
+
+.icon {
+  position: absolute;
+  bottom: 10%;
+  opacity: 0;
+}
+
+.img-container:hover {
+  background-color: rgba(0, 0, 0, 0.5);
+}
+
+.img-container:hover .icon {
+  opacity: 1;
+}
+
+.img-container:hover #profile__img {
+  filter: brightness(50%);
 }
 
 #profile__img {
@@ -47,7 +66,7 @@ header .share {
   flex-direction: row;
   justify-content: center;
   align-items: center;
-  transition: 0.5s ease-in-out;
+  transition: 0.2s ease-in-out;
 }
 
 .links-container a:hover {
