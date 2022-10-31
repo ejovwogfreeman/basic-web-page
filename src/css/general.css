@@ -76,15 +76,7 @@ footer {
   .links-container a,
   header,
   footer {
-    width: 700px;
-  }
-}
-
-@media screen and (max-width: 800px) {
-  .links-container a,
-  header,
-  footer {
-    width: 500px;
+    width: 90%;
   }
   header {
     padding: 50px 0px 10px;
@@ -93,37 +85,5 @@ footer {
     display: block;
     text-align: left;
     padding-top: 80px;
-  }
-}
-
-@media screen and (max-width: 600px) {
-  .links-container a,
-  header,
-  footer {
-    width: 380px;
-  }
-}
-
-@media screen and (max-width: 400px) {
-  .links-container a,
-  header,
-  footer {
-    width: 350px;
-  }
-}
-
-@media screen and (max-width: 360px) {
-  .links-container a,
-  header,
-  footer {
-    width: 300px;
-  }
-}
-
-@media screen and (max-width: 310px) {
-  .links-container a,
-  header,
-  footer {
-    width: 280px;
   }
 }
