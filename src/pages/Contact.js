@@ -2,7 +2,7 @@ import React, { useState } from "react";
 import "../css/general.css";
 import ScrollToTop from "../components/ScrollToTop";
 import { BsFillArrowLeftCircleFill } from "react-icons/bs";
-import { Link } from "react-router-dom";
+import { Link, useNavigate } from "react-router-dom";
 
 const Contact = () => {
   const [formData, setFormData] = useState({
@@ -28,6 +28,8 @@ const Contact = () => {
       [e.target.name]: e.target.value,
     });
   };
+
+  const navigate = useNavigate();
 
   const handleSubmit = (e) => {
     e.preventDefault();
@@ -55,7 +57,10 @@ const Contact = () => {
     }, 2000);
 
     if (firstName && lastName && email && message && checkbox) {
-      alert("Thanks, I'll get back to you soon");
+      alert(
+        "Thanks, I'll get back to you soon, you will be redirected to the home page"
+      );
+      navigate("/");
     }
   };
 
