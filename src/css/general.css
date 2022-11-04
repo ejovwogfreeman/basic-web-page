@@ -85,8 +85,7 @@ footer {
 
 .contact-us {
   width: 800px;
-  background-color: red;
-  margin: 20px auto;
+  margin: 80px auto 0px;
   text-align: left;
   padding: 0px 20px;
 }
@@ -112,5 +111,8 @@ footer {
     display: block;
     text-align: left;
     padding-top: 80px;
+  }
+  .contact-us {
+    width: 95%;
   }
 }

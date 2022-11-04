@@ -14,7 +14,7 @@ const Header = () => {
         <img src={img} alt="profile" id="profile__img" />
         <img src={icon} alt="icon" id="icon" className="icon" />
       </div>
-      <h2 id="slack">Ejovwo Godbless</h2>
+      <h2 id="slack">ejovwogfreeman</h2>
     </header>
   );
 };
