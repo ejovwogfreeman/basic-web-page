@@ -2,6 +2,7 @@ import React from "react";
 import "../css/general.css";
 import slack from "../images/slack-icon.png";
 import github from "../images/github-icon.png";
+import { Link } from "react-router-dom";
 
 const data = [
   {
@@ -45,6 +46,7 @@ const Links = () => {
             {urls.text}
           </a>
         ))}
+        <Link to="/contact">Contact Me</Link>
       </div>
       <div>
         <a href="htts://www.slack.com/" alt="slack">
