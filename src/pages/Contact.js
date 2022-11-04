@@ -84,7 +84,7 @@ const Contact = () => {
         <form onSubmit={handleSubmit}>
           <div className="row mb-3">
             <div className="col-md-6">
-              <label htmlFor="first-name" className="form-label">
+              <label htmlFor="first_name" className="form-label">
                 First name
               </label>
               <input
@@ -94,7 +94,7 @@ const Contact = () => {
                     ? "form-control is-invalid error-shadow"
                     : "form-control"
                 }
-                id="first-name"
+                id="first_name"
                 placeholder="Enter your first name"
                 onChange={handleChange}
                 name="firstName"
@@ -103,7 +103,7 @@ const Contact = () => {
               <small className="text-danger">{firstNameErr}</small>
             </div>
             <div className="col-md-6">
-              <label htmlFor="last-name" className="form-label">
+              <label htmlFor="last_name" className="form-label">
                 Last name
               </label>
               <input
@@ -113,7 +113,7 @@ const Contact = () => {
                     ? "form-control is-invalid error-shadow"
                     : "form-control"
                 }
-                id="last-name"
+                id="last_name"
                 placeholder="Enter your last name"
                 onChange={handleChange}
                 name="lastName"
@@ -188,7 +188,7 @@ const Contact = () => {
             </div>
           </div>
           <div className="d-grid">
-            <button type="submit" className="btn btn-primary">
+            <button type="submit" id="btn__submit" className="btn btn-primary">
               Send message
             </button>
           </div>
