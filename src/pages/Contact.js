@@ -14,6 +14,10 @@ const Contact = () => {
   });
 
   const [firstNameErr, setFirstNameErr] = useState("");
+  const [lastNameErr, setLastNameErr] = useState("");
+  const [emailErr, setEmailErr] = useState("");
+  const [messageErr, setMessageErr] = useState("");
+  const [checkboxErr, setCheckboxErr] = useState("");
 
   const { firstName, lastName, email, message, checkbox } = formData;
 
@@ -29,6 +33,25 @@ const Contact = () => {
     if (!firstName) {
       setFirstNameErr("First Name is required");
     }
+    if (!lastName) {
+      setLastNameErr("Last Name is required");
+    }
+    if (!email) {
+      setEmailErr("Email is required");
+    }
+    if (!message) {
+      setMessageErr("Message is required");
+    }
+    if (!checkbox) {
+      setCheckboxErr("This field is required");
+    }
+    setTimeout(() => {
+      setFirstNameErr("");
+      setLastNameErr("");
+      setEmailErr("");
+      setMessageErr("");
+      setCheckboxErr("");
+    }, 2000);
   };
 
   return (
@@ -48,11 +71,7 @@ const Contact = () => {
       <div className="contact-us">
         <h1>Contact Me</h1>
         <p>Hi there, contact me to ask me about anything you have in mind</p>
-        <form
-          //   className="row g-3 mt-5 needs-validation"
-          //   novalidate
-          onSubmit={handleSubmit}
-        >
+        <form onSubmit={handleSubmit}>
           <div className="row mb-3">
             <div className="col-md-6">
               <label htmlFor="first-name" className="form-label">
@@ -61,7 +80,9 @@ const Contact = () => {
               <input
                 type="text"
                 className={
-                  firstNameErr ? "form-control is-invalid" : "form-control"
+                  firstNameErr
+                    ? "form-control is-invalid error-shadow"
+                    : "form-control"
                 }
                 id="first-name"
                 placeholder="Enter your first name"
@@ -69,7 +90,7 @@ const Contact = () => {
                 name="firstName"
                 value={firstName}
               />
-              {/* <small className="text-danger">{firstNameErr}</small> */}
+              <small className="text-danger">{firstNameErr}</small>
             </div>
             <div className="col-md-6">
               <label htmlFor="last-name" className="form-label">
@@ -77,14 +98,18 @@ const Contact = () => {
               </label>
               <input
                 type="text"
-                className="form-control"
+                className={
+                  lastNameErr
+                    ? "form-control is-invalid error-shadow"
+                    : "form-control"
+                }
                 id="last-name"
                 placeholder="Enter your last name"
                 onChange={handleChange}
                 name="lastName"
                 value={lastName}
               />
-              {/* <small className="text-danger">{firstNameErr}</small> */}
+              <small className="text-danger">{lastNameErr}</small>
             </div>
           </div>
           <div className="col-12 mb-3">
@@ -93,14 +118,18 @@ const Contact = () => {
             </label>
             <input
               type="email"
-              className="form-control"
+              className={
+                emailErr
+                  ? "form-control is-invalid error-shadow"
+                  : "form-control"
+              }
               id="inputEmail4"
               placeholder="yourname@email.com"
               onChange={handleChange}
               name="email"
               value={email}
             />
-            {/* <small className="text-danger">{firstNameErr}</small> */}
+            <small className="text-danger">{emailErr}</small>
           </div>
           <div className="col-12 mb-3">
             <label htmlFor="message" className="form-label">
@@ -108,7 +137,11 @@ const Contact = () => {
             </label>
             <div>
               <textarea
-                className="form-control"
+                className={
+                  messageErr
+                    ? "form-control is-invalid error-shadow"
+                    : "form-control"
+                }
                 placeholder="send me a message and i'll replly you as soon as possible"
                 id="message"
                 onChange={handleChange}
@@ -116,7 +149,7 @@ const Contact = () => {
                 value={message}
                 style={{ height: "100px" }}
               ></textarea>
-              {/* <small className="text-danger">{firstNameErr}</small> */}
+              <small className="text-danger">{messageErr}</small>
             </div>
           </div>
           <div className="col-12 mb-3">
@@ -124,7 +157,12 @@ const Contact = () => {
               <div className="col-1">
                 <input
                   type="checkbox"
-                  className="form-check-input"
+                  //   className="form-check-input"
+                  className={
+                    firstNameErr
+                      ? "is-invalid form-check-input error-shadow"
+                      : "form-check-input"
+                  }
                   id="exampleCheck1"
                   onChange={handleChange}
                   name="check"
@@ -137,7 +175,7 @@ const Contact = () => {
                   contact you.
                 </label>
               </div>
-              {/* <small className="text-danger">{firstNameErr}</small> */}
+              <small className="text-danger">{checkboxErr}</small>
             </div>
           </div>
           <div className="d-grid">
