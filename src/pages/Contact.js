@@ -54,10 +54,7 @@ const Contact = () => {
       setCheckboxErr("");
     }, 2000);
 
-    // alert("Thanks, I'll get back to you soon");
-
     if (firstName && lastName && email && message && checkbox) {
-      //   setCheckbox(true);
       alert("Thanks, I'll get back to you soon");
     }
   };
@@ -166,7 +163,7 @@ const Contact = () => {
                 <input
                   type="checkbox"
                   className={
-                    firstNameErr
+                    checkboxErr
                       ? "is-invalid form-check-input error-shadow"
                       : "form-check-input"
                   }
