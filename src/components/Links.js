@@ -49,11 +49,11 @@ const Links = () => {
         <Link to="/contact">Contact Me</Link>
       </div>
       <div>
-        <a href="htts://www.slack.com/" alt="slack">
+        <a href="https://www.slack.com/" alt="slack">
           <img src={slack} alt="slack" />
         </a>
         &nbsp; &nbsp; &nbsp;
-        <a href="htts://github.com/ejovwogfreeman/" alt="slack">
+        <a href="https://github.com/ejovwogfreeman/" alt="slack">
           <img src={github} alt="github" />
         </a>
       </div>

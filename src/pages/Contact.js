@@ -10,8 +10,9 @@ const Contact = () => {
     lastName: "",
     email: "",
     message: "",
-    chekbox: "",
   });
+
+  const [checkbox, setCheckbox] = useState(false);
 
   const [firstNameErr, setFirstNameErr] = useState("");
   const [lastNameErr, setLastNameErr] = useState("");
@@ -19,7 +20,7 @@ const Contact = () => {
   const [messageErr, setMessageErr] = useState("");
   const [checkboxErr, setCheckboxErr] = useState("");
 
-  const { firstName, lastName, email, message, checkbox } = formData;
+  const { firstName, lastName, email, message } = formData;
 
   const handleChange = (e) => {
     setFormData({
@@ -52,6 +53,13 @@ const Contact = () => {
       setMessageErr("");
       setCheckboxErr("");
     }, 2000);
+
+    // alert("Thanks, I'll get back to you soon");
+
+    if (firstName && lastName && email && message && checkbox) {
+      //   setCheckbox(true);
+      alert("Thanks, I'll get back to you soon");
+    }
   };
 
   return (
@@ -157,14 +165,13 @@ const Contact = () => {
               <div className="col-1">
                 <input
                   type="checkbox"
-                  //   className="form-check-input"
                   className={
                     firstNameErr
                       ? "is-invalid form-check-input error-shadow"
                       : "form-check-input"
                   }
                   id="exampleCheck1"
-                  onChange={handleChange}
+                  onChange={(e) => setCheckbox(!checkbox)}
                   name="check"
                   value={checkbox}
                 />
