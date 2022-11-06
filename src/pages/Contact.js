@@ -76,7 +76,7 @@ const Contact = () => {
           fontSize: "20px",
         }}
       >
-        <BsFillArrowLeftCircleFill />
+      //<BsFillArrowLeftCircleFill />
       </Link>
       <div className="contact-us">
         <h1>Contact Me</h1>
