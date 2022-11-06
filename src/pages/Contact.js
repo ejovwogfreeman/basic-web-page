@@ -1,8 +1,7 @@
 import React, { useState } from "react";
 import "../css/general.css";
 import ScrollToTop from "../components/ScrollToTop";
-// import { BsFillArrowLeftCircleFill } from "react-icons/bs";
-import { Link, useNavigate } from "react-router-dom";
+import { useNavigate } from "react-router-dom";
 
 const Contact = () => {
   const [formData, setFormData] = useState({
@@ -67,17 +66,6 @@ const Contact = () => {
   return (
     <>
       <ScrollToTop />
-      {/* <Link
-        to="/"
-        style={{
-          position: "absolute",
-          top: "10px",
-          left: "20px",
-          fontSize: "20px",
-        }}
-      >
-        <BsFillArrowLeftCircleFill />
-      </Link> */}
       <div className="contact-us">
         <h1>Contact Me</h1>
         <p>Hi there, contact me to ask me about anything you have in mind</p>
