@@ -46,7 +46,9 @@ const Links = () => {
             {urls.text}
           </a>
         ))}
-        <Link to="/contact">Contact Me</Link>
+        <Link to="/contact" id="contact">
+          Contact Me
+        </Link>
       </div>
       <div>
         <a href="https://www.slack.com/" alt="slack">

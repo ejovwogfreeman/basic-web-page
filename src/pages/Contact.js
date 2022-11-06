@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import "../css/general.css";
 import ScrollToTop from "../components/ScrollToTop";
-import { BsFillArrowLeftCircleFill } from "react-icons/bs";
+// import { BsFillArrowLeftCircleFill } from "react-icons/bs";
 import { Link, useNavigate } from "react-router-dom";
 
 const Contact = () => {
@@ -67,7 +67,7 @@ const Contact = () => {
   return (
     <>
       <ScrollToTop />
-      <Link
+      {/* <Link
         to="/"
         style={{
           position: "absolute",
@@ -77,7 +77,7 @@ const Contact = () => {
         }}
       >
         <BsFillArrowLeftCircleFill />
-      </Link>
+      </Link> */}
       <div className="contact-us">
         <h1>Contact Me</h1>
         <p>Hi there, contact me to ask me about anything you have in mind</p>
@@ -123,7 +123,7 @@ const Contact = () => {
             </div>
           </div>
           <div className="col-12 mb-3">
-            <label htmlFor="inputEmail4" className="form-label">
+            <label htmlFor="email" className="form-label">
               Email
             </label>
             <input
@@ -133,7 +133,7 @@ const Contact = () => {
                   ? "form-control is-invalid error-shadow"
                   : "form-control"
               }
-              id="inputEmail4"
+              id="email"
               placeholder="yourname@email.com"
               onChange={handleChange}
               name="email"
